@@ -1,0 +1,8 @@
+
+#!/bin/sh
+
+if [ "$NODE_ENV" = production ]; then
+  node dist/bin/api
+else
+  nodemon --exec ./node_modules/.bin/babel-node bin/api
+fi

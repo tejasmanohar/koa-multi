@@ -1,8 +1,7 @@
 
 /**
- * This file illustrates how you may map
- * single routes using config.json instead
- * of resource-based routing.
+ * This file illustrates using resourceful
+ * routing. Pay attention to the function names.
  */
 
 const stats = {

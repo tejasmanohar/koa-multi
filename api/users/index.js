@@ -7,7 +7,7 @@ import parse from 'co-body';
 
 /**
  * This file illustrates using resourceful
- * routing using the koa-router module.
+ * routing. Pay attention to the function names.
  */
 
 const users = {

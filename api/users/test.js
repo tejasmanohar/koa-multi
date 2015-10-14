@@ -8,7 +8,7 @@ describe('GET /users', () => {
 
     request(app.listen())
     .get('/users')
-    .end(function(err, res){
+    .end((err, res) => {
       if (err) return done(err);
       Object.keys(res.body).should.eql(['tobi', 'loki', 'jane']);
       done();

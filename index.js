@@ -6,7 +6,7 @@
 import responseTime from 'koa-response-time'
 import compress from 'koa-compress'
 import logger from 'koa-logger'
-import router from 'koa-router'
+// import router from 'koa-router'
 import load from './lib/load'
 import koa from 'koa'
 
@@ -31,7 +31,7 @@ export default function() {
   app.use(compress());
 
   // routing
-  app.use(router(app));
+  // app.use(router(app));
 
   // boot
   load(app, __dirname + '/api');

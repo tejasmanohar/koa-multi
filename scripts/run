@@ -2,7 +2,7 @@
 #!/bin/sh
 
 if [ "$NODE_ENV" = production ]; then
-  node dist/bin/api
+  node dist/
 else
-  nodemon --exec ./node_modules/.bin/babel-node bin/api
+  nodemon --exec ./node_modules/.bin/babel-node .
 fi

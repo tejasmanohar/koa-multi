@@ -12,7 +12,6 @@
   "dependencies": {
     "babel-runtime": "^5.8.25",
     "co-body": "0.0.1",
-    "commander": "~2.2.0",
     "debug": "*",
     "koa": "~0.6.1",
     "koa-compress": "1.0.7",

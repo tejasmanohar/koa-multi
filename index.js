@@ -9,31 +9,25 @@ import logger from 'koa-logger'
 import load from './lib/load'
 import koa from 'koa'
 
-/**
- * Initialize an app with the given `opts`.
- * Expose app
- * @param {Object} opts
- * @return {Application}
- * @api public
- */
+// koa app
+const app = koa();
 
-export default function() {
-  const app = koa();
+// logging
+app.use(logger());
 
-  // logging
-  app.use(logger());
+// x-response-time
+app.use(responseTime());
 
-  // x-response-time
-  app.use(responseTime());
+// compression
+app.use(compress());
 
-  // compression
-  app.use(compress());
+// boot
+load(app, __dirname + '/api')
 
-  // routing
-  // app.use(router(app));
+// port
+const port = process.env.PORT || 3000;
 
-  // boot
-  load(app, __dirname + '/api');
+// start server
+app.listen(port)
 
-  return app;
-}
+console.log(`listening on port ${port}`)

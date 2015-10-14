@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-import parse from 'co-body';
+import parse from 'co-body'
 
 /**
  * This file illustrates using resourceful

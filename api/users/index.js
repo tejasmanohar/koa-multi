@@ -52,7 +52,7 @@ export function *show() {
 
 export function *create() {
   const body = yield parse(this)
-  if (!body.name) this.throw(400, '.name required')
+  if (!body.name) this.throw(400, 'name required')
   users[body.name] = body
   this.status = 201
 }

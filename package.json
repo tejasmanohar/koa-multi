@@ -18,7 +18,8 @@
     "koa-compress": "1.0.7",
     "koa-logger": "~1.2.1",
     "koa-resource-router": "^0.3.3",
-    "koa-response-time": "~1.0.2"
+    "koa-response-time": "~1.0.2",
+    "xml-object": "^0.1.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",

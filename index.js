@@ -10,16 +10,16 @@ import load from './lib/load'
 import koa from 'koa'
 
 // koa app
-const app = koa();
+const app = koa()
 
 // logging
-app.use(logger());
+app.use(logger())
 
 // x-response-time
-app.use(responseTime());
+app.use(responseTime())
 
 // compression
-app.use(compress());
+app.use(compress())
 
 // boot
 load(app, __dirname + '/api')
